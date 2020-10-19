@@ -21,11 +21,42 @@
         overflow: hidden;
         .about-community {
             float: $left;
-            width: 30%;
+            width: 25%;
+            background-color: #EFEDEE;
+            text-align: $center;
+            padding: 30px 10px;
+            @media (max-width: 992px) {
+                float: none;
+                width: 100%;
+                margin-bottom: 50px;
+            }
+            h4 {
+                font: {
+                    family: $latoFont;
+                }
+                line-height: 1.8;
+                margin-bottom: 40px;
+            }
+            li {
+                line-height: 3.5;
+                color: $brwonColor;
+            }
         }
         .about-article {
             float: $left;
-            width: 70%;
+            width: 75%;
+            padding-left: 40px;
+            @media (max-width: 992px) {
+                float: none;
+                width: 100%;
+                padding-left: 0;
+            }
+            h4 {
+                margin-bottom: 40px;
+            }
+            .free-template, .more-template, {
+                margin-bottom: 30px;
+            }
         }
     }
 }
