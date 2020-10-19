@@ -1,0 +1,36 @@
+
+.bg-light {
+    background-color: #eeebec !important;
+}
+.navbar {
+    font: {
+        family: $latoFont;
+    }
+    padding: 40px 0;
+    .navbar-brand {
+        padding-left: 15px;
+    }
+    .navbar-toggler {margin-right: 15px;}
+    .navbar-nav {
+        .nav-link {
+            padding: 20px 40px;
+            color: $brwonColor;
+            &:hover {
+                color: $greenColor;
+            }
+        }
+    }
+    .dropdown-item {
+        color: $brwonColor;
+        &:hover {
+            color: $greenColor;
+        }
+    }
+}
+.navbar-light {
+    .navbar-nav {
+        .active>.nav-link {
+            color: $pinkColor;
+        }
+    }
+}

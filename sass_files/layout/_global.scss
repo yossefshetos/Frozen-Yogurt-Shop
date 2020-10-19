@@ -1,0 +1,49 @@
+* {
+    box-sizing: border-box;
+}
+
+p {
+    color: $brwonColor;
+    font-family: $latoFont;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: $pinkColor;
+} 
+
+ul {
+    list-style: none;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+.pd70-y {
+    padding: 70px 0;
+}
+.pd100-y {
+    padding: 100px 0;
+}
+.pd50-y {
+    padding: 50px 0;
+}
+.pd70-top {
+    padding: 70px 0 0;
+}
+.pd100-top {
+    padding: 100px 0 0;
+}
+.pd50-top {
+    padding: 50px 0 0;
+}
+
+.mg100-right {
+    margin-right: 100px;
+}
+
+.text-uppercase {
+    text-transform: uppercase;
+}

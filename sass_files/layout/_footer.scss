@@ -1,0 +1,34 @@
+.footer {
+    background: $pinkColor;
+    color: #FFF;
+    text-align: center;
+    font: {
+        family: $latoFont;
+        size: 12px;
+    }
+    a {
+        display: inline-block;
+        background-image: url('../../images/icons.png');
+        background-repeat: no-repeat;
+        width: 32px;
+        height: 32px;
+        margin-left: 15px;
+        margin-right: 15px;
+        &:hover {
+            opacity: .8;
+        }
+        &.twitter {
+            background-position: 0 -95px;
+        }
+        &.google-plus {
+            background-position: 0 -31px;
+        }
+        &.pintrest {
+            background-position: 0 -62px;
+        }
+    }
+    span {
+        display: block;
+        margin-top: 30px;
+    }
+}

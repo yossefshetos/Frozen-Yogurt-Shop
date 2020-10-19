@@ -1,0 +1,123 @@
+/***********************************************/
+@import '../sass_files/helpers/variables';
+@import '../sass_files/layout/header';
+@import '../sass_files/helpers/buttons';
+@import '../sass_files/layout/grid';
+@import '../sass_files/layout/global';
+@import '../sass_files/layout/footer';
+/***********************************************/
+
+/*** Home Section ***/
+.home {
+    .bg-home {
+        background: #f8f8f8;
+        text-align: $center;
+        position: relative;
+        img {
+            max-width: 100%;
+        } 
+        a {
+            position: absolute;
+            top: 65%;
+            right: 32%;
+            background: url(../images/icons.png) no-repeat;
+            background-position: 0 -126px;
+            display: block;
+            width: 156px;
+            height: 156px;
+            padding: 50px 0 0;
+            font: {
+                family: $magraFont;
+                weight: bold;
+                size: 24px;
+            }
+            @media #{$maxMobile} {
+                display: none;
+            }
+            color: #FFF;
+        }
+        
+    }
+    .new-product {
+        background: #eae7e8;
+        overflow: hidden;
+        .new-product-text {
+            float: $left;
+            width: 60%;
+            @media #{$maxMobile} {
+                float: none;
+                width: 100%;
+            }
+            h3 {
+                color: $brwonColor;
+                font: {
+                    family: $latoFont;
+                    weight: bold;
+                }
+            }
+            h2 {
+                font: {
+                    weight: bold;
+                    family: $magraFont;
+                    size: 30px;
+                }
+            }
+        }
+        .new-product-img {
+            @extend .new-product-text;
+            width: 40%;
+            text-align: $right;
+            margin-bottom: -5px;
+            @media #{$maxMobile} {
+                float: none;
+                width: 100%;
+            }
+        }
+    }
+    .services {
+        background: $greenColor;
+        ul {
+            text-align: $center;
+            @media #{$maxMobile} {
+                padding: 0;
+            }
+            li {
+                display: inline-block;
+                @media (max-width: 1100px) {
+                    display: block;
+                    margin: 0;
+                    margin-bottom: 40px;
+                }
+                a {
+                    background: url(../images/icons.png) no-repeat;
+                    height: 42px;
+                    display: block;
+                    width: 80px;
+                    margin: 0 auto;
+                    &.services1 {
+                        background-position: 0 -370px;
+                    }
+                    &.services2 {
+                        background-position: 0 -419px;
+                    }
+                    &.services3 {
+                        background-position: 0 -282px;
+                    }
+                    &.services4 {
+                        background-position: 0 -326px;
+                    }
+                }
+                h4 {
+                    margin: 0;
+                    margin-top: 20px;
+                    color: #FFF;
+                    font: {
+                        size: 20px;
+                        family: $latoFont;
+                        weight: normal
+                    }
+                }
+            }
+        }
+    }
+}

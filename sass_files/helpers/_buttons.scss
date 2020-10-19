@@ -1,0 +1,15 @@
+// Toggle Navbar Button
+.toggle-button {
+    border: none;
+    outline: none;
+    background-image: url('../../images/mobile/mobile-menu.png');
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    right: 10px;
+    top: 36px;
+    cursor: pointer;
+    @media #{$minSmall} {
+        display: none;
+    }
+}
