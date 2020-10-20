@@ -1,0 +1,34 @@
+/***********************************************/
+@import '../sass_files/helpers/variables';
+@import '../sass_files/helpers/headings';
+@import '../sass_files/layout/header';
+@import '../sass_files/helpers/buttons';
+@import '../sass_files/layout/grid';
+@import '../sass_files/layout/global';
+@import '../sass_files/layout/footer';
+/***********************************************/
+.products {
+    .row {
+        align-items: baseline;
+        justify-content: space-between;
+    }
+    .product-desc {
+        @media (max-width: 767px) {
+            text-align: center;
+        }
+        h4 {
+            font: {
+                family: $magraFont;
+                weight: bold;
+                size: 28px;
+            }
+        }
+    }
+    .product {
+        span {
+            display: block;
+            color: $pinkColor;
+            font-size: 20px;
+        }
+    }
+}
